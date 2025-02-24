@@ -6,7 +6,11 @@ public class Main{
 
         System.out.println("Now playing the song");
         mbox.playSong(mbox.getSongID(), mbox.getPremiumSong(), 2);
-        
+        mbox.playSong(mbox.getSongARTISTS(),mbox.getSongTitle(),2)；
+        mbox.playSong(mbox.getSongAlbum(), mbox.getSongGenre(),2);
+        mbox.playSong(mbox.getSongProducer(), mbox.getMusicLabel(),2);
+        mbox.playSong(mbox.ads(),1);
+    
         // --- TODO
 
         /* Repeat the above code to create another object  
