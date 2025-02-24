@@ -1,0 +1,55 @@
+public class Slice-o-Heaven {
+    public String storeName;
+    public String storeAddress;
+    public String storeEmail;
+    public String storePhone;
+    public String storeMenu;
+    public String pizzalngredients;
+    public double pizzaPrice; 
+    public String sides; 
+    public String drinks;
+    private String orderID;
+    private double orderTotal;
+
+    public void takeOrder(String orderID, String pizza, String sides, String drinks, double total){
+        storeName = "Slice-o-Heaven";
+        orderTotal=total;
+        orderTotal += getPizzaPrice(pizza);
+        orderTotal += getSidePrice(side);
+        orderTotal += getDrinkPrice(drink);
+
+        prepareOrder();
+        printReceipt();
+        System.out.println("Order accepted!");
+
+        System.out.println("Order is being prepared");}
+
+
+        try{
+            Thread.sleep(5000);
+        } catch (InterruptedException e){
+            System.out.println("Order is ready for pickup!");
+        }
+
+        System.out.println("Your order is ready!");
+
+        private void printReceipt() {
+            System.out.println("=== Slice-o-Heaven Receipt ===");
+            System.out.println("Order ID: " + orderID);
+            System.out.println("Total: $" + String.format("%.2f", orderTotal));
+          
+    }
+    
+    private void printReceipt(){
+        System.out.println("********RECEIPT********");
+        System.out.println("Store: Slice-o-Heaven");
+        System.out.println("Order ID: " + orderID);
+        System.out.println("Order Details: " + orderDetails);
+        System.out.println("Order Total: " + orderTotal);
+    }
+    
+       
+
+
+
+}
